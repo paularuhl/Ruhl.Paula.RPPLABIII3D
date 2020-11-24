@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3ed1bea591.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/scripts.js" type="module"></script>
+    <title>Parcial</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <img id="logo" src="img/logo.png" alt="logo con estrellitas">
+        </div>
+        <ul>
+            <li> <a href="#aboutUs">Nosotros</a> </li>
+            <li> <a href="#news">Anuncios</a> </li>
+            <li> <a href="#blog">Blog</a> </li>
+            <li> <a href="#contact">Contacto</a> </li>
+        </ul>
+    </header>
+    <main>
+        <div class="encabezadoAdmin">
+            <h1>ADMINISTRACIÓN</h1>
+        </div>
+
+        <div class="encabezadoAdmin">
+            <img src="img/autos_admin.png" alt="Autos">
+        </div>
+        <section class="container" id="dataIn">
+            <form>
+                <fieldset>
+                    <legend> Información del anuncio </legend>
+                    <div class="big">
+                        <i class="fas fa-car"></i>
+                        <label for="txtTitulo">
+                            Titulo:
+                        </label>
+                        <input type="text" name="titulo" class="big" id="txtTitulo" required>
+                    </div>
+                    <br>
+                    <br>
+                    <fieldset id="setTransaction">
+                        <legend><i class="fas fa-exchange-alt"></i> Transaccion </legend>
+                        <label for="rdoS"><input type="radio" name="transaction" value="sell" id="rdoS" checked>
+                            Venta</label> <br>
+                        <label for="rdoR"><input type="radio" name="transaction" value="rent" id="rdoR">
+                            Alquiler</label>
+                        <br>
+                    </fieldset>
+                    <br>
+                    <br>
+                    <div class="big">
+                        <i class="fas fa-file-alt"></i>
+                        <label for="txtDescripcion">
+                            Descripcion:
+                        </label>
+                        <input type="text" name="descripcion" class="big" id="txtDescripcion" required>
+                    </div>
+
+                    <br>
+                    <br>
+                    <div class="big">
+                        <i class="far fa-money-bill-alt"></i>
+                        <label for="txtPrecio">
+                            Precio:
+                        </label>
+                        <input type="number"  name="precio" class="big" id="txtPrecio" required>
+                    </div>
+
+                    <br>
+                    <br>
+                    <label> <i class="fas fa-door-open"></i> Puertas
+                        <input type="number"  name="puertas" id="txtPuertas" placeholder="Puertas" required>
+                    </label>
+
+                    <label> <img src="img/kms.png" alt="kms"> Kms
+                        <input type="number"  name="kms" id="txtKMs" class="tiny" placeholder="KMs" required>
+                    </label>
+
+                    <label> <i class="fas fa-tachometer-alt"></i> Potencia
+                        <input type="number"  name="potencia" id="txtPotencia" class="tiny" placeholder="Potencia"
+                            required>
+                    </label>
+
+                    <br>
+                    <br>
+
+                    <fieldset id="setTransaction">
+                        <legend><i class="fas fa-paint-brush"></i>  Color </legend>
+                        <label><input name="color" type="checkbox" id="cbRojo" value="rojo"> Rojo </label><br>
+                        <label><input name="color" type="checkbox" id="cbBlanco" value="blanco"> Blanco </label><br>
+                        <label><input name="color" type="checkbox" id="cbNegro" value="negro"> Negro</label><br>
+    
+                    </fieldset>
+                    <br>
+
+                        <input type="number" id="txtID" hidden>
+                </fieldset>
+                <div class="botones">
+                    <button id="btnGuardar" type="submit"> <i class="far fa-save"></i>
+                        Guardar</button>
+                    <button id="btnModificar" disabled> <i class="fas fa-edit"></i> Modificar</button>
+                    <button id="btnEliminar" disabled> <i class="fas fa-trash-alt"></i>Eliminar</button>
+                </div>
+
+            </form>
+        </section>
+
+        <section class="container">
+            <div id="divTabla">
+            </div>
+        </section>
+    </main>
+    <footer>
+
+        <ul id="bottomLinks">
+            <li> <a href="#aboutUs">Nosotros</a> </li>
+            <li> <a href="#news">Anuncios</a> </li>
+            <li> <a href="#blog">Blog</a> </li>
+            <li> <a href="#contact">Contacto</a> </li>
+        </ul>
+        <h4>Todos los derechos reservados 2019 (c)</h4>
+    </footer>
+</body>
+
+</html>
